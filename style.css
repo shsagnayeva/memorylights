@@ -1,32 +1,41 @@
+body {
+    background-color: darkslategrey;
+}
+
 .main-container {
     background-image: url(https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     position: absolute;
+    left: 33.333%;
     min-height: 100%;
-    min-width: 100%;
+    width: 500px;
 }
 
-.box-container {
+.flex-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    position: relative;
-    left: 25%;
+    position: absolute;
+    top: 150px;
+
 }
 
 .light-container {
-    width: 80px;
+    width: 60px;
     height: 80px;
-    padding: 50px;
+    padding: 20px;
     margin: 10px;
+    border: solid grey 5px;
+    background-color: grey;
+    flex: 3;
 }
 
 .lightbulb {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    border: solid 5px royalblue;
-    margin: 50px;
+    border: solid 5px black;
     filter: drop-shadow(20px 5px 10px royalblue)
 }
