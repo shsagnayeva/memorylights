@@ -1,9 +1,32 @@
+.main-container {
+    background-image: url(https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 25%;
+}
+
 .light-container {
     width: 80px;
     height: 80px;
+    padding: 50px;
+    margin: 10px;
 }
 
 .lightbulb {
-    width: 100%;
-    height: 100;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 5px royalblue;
+    margin: 50px;
+    filter: drop-shadow(20px 5px 10px royalblue)
 }
