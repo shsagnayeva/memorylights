@@ -1,5 +1,5 @@
 body {
-    background-color: darkslategrey;
+    background-color: darkgrey;
 }
 
 .main-container {
@@ -7,35 +7,69 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    position: absolute;
-    left: 33.333%;
-    min-height: 100%;
-    width: 500px;
+    position: relative;
 }
 
 .flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    position: absolute;
-    top: 150px;
-
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
 }
 
 .light-container {
-    width: 60px;
-    height: 80px;
-    padding: 20px;
-    margin: 10px;
-    border: solid grey 5px;
-    background-color: grey;
-    flex: 3;
+    border: solid  4px pink;
+    flex-basis: 30%;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .lightbulb {
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: 200px;
+    margin: 1px;
     border-radius: 50%;
     border: solid 5px black;
-    filter: drop-shadow(20px 5px 10px royalblue)
+    filter: drop-shadow(20px 5px 10px royalblue);
+    position: relative;
+    left: 25%;
+}
+
+@media screen and (max-width: 992px) {
+    .light-container {
+        border: solid 3px red;
+        }
+
+    .lightbulb {
+        width: 150px;
+        height: 150px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .light-container {
+            border: solid 2px teal;
+        }
+    
+        .lightbulb {
+            width: 80px;
+            height: 80px;
+        }
+
+        @media screen and (max-width: 576px) {
+            .light-container {
+                border: solid 1px blue;
+            }
+        
+            .lightbulb {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
 }
