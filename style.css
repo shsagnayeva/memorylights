@@ -15,30 +15,36 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    width: fit-content;
+    right: -15%;
+    width: 75%;
     height: fit-content;
     justify-content: center;
     align-items: center;
+    max-width: fit-content;
 }
 
 .light-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid  4px pink;
     flex-basis: 30%;
     margin: 5px;
-    justify-content: center;
-    align-items: center;
-
+    width: fit-content;
 }
 
 .lightbulb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 200px;
-    margin: 1px;
     border-radius: 50%;
-    border: solid 5px black;
-    filter: drop-shadow(20px 5px 10px royalblue);
+    filter: drop-shadow(40px 20px 30px royalblue);
     position: relative;
-    left: 25%;
+    font-size: 1000%;
+    margin: 10px;
+    border: black solid 1px;
 }
 
 @media screen and (max-width: 992px) {
@@ -49,6 +55,8 @@ body {
     .lightbulb {
         width: 150px;
         height: 150px;
+        font-size: 700%;
+
     }
 
     @media screen and (max-width: 768px) {
@@ -59,6 +67,7 @@ body {
         .lightbulb {
             width: 80px;
             height: 80px;
+            font-size: 450%;
         }
 
         @media screen and (max-width: 576px) {
@@ -69,6 +78,7 @@ body {
             .lightbulb {
                 width: 50px;
                 height: 50px;
+                font-size: 250%;
             }
         }
     }
